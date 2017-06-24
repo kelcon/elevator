@@ -1,5 +1,6 @@
 # lift cache
 
+```
 var agent = function(resource,done) {     
     var err = null;
     var val = 'value_to_save';
@@ -13,3 +14,7 @@ var collection = liftcache({
 
 var lift = collection.lift;
 
+// usage
+
+lift('somekey',function(err,val) console.log(val); });
+```
