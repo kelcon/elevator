@@ -7,14 +7,11 @@ var agent = function(resource,done) {
     done(err, val);
 });
 
-var collection = liftcache({
+var cache = liftcache({
     path: '../cache', 
     agent: agent
 });
 
-var lift = collection.lift;
-
-// usage
-
-lift('somekey',function(err,val) console.log(val); });
+// usage:
+cache('somekey',function(err,val) console.log(val); });
 ```
