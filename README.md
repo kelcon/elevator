@@ -8,7 +8,7 @@ var agent = function(resource,done) {
 });
 
 var cache = liftcache({
-    path: '../cache', 
+    path: './put_cache_db_in_that_dir', 
     agent: agent
 });
 
